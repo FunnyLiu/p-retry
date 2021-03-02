@@ -43,9 +43,11 @@ const pRetry = (input, options) => new Promise((resolve, reject) => {
 	};
 
 	const operation = retry.operation(options);
-
+    // 该库具体实现
+	// [笔记内容](https://github.com/FunnyLiu/node-retry/blob/readsource/lib/retry_operation.js#L95)
 	operation.attempt(async attemptNumber => {
 		try {
+			// 执行传入的函数
 			resolve(await input(attemptNumber));
 		} catch (error) {
 			if (!(error instanceof Error)) {

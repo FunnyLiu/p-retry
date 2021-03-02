@@ -1,3 +1,34 @@
+
+# 源码分析
+
+## 文件结构
+
+``` bash
+/Users/liufang/openSource/FunnyLiu/p-retry
+├── index.d.ts
+├── index.js
+├── index.test-d.ts
+├── license
+├── package.json
+├── readme.md
+└── test.js
+
+file: 7
+
+ignored
+
+```
+
+## 外部模块依赖
+
+![img](./outer.svg)
+
+## 内部模块依赖
+
+![img](./inner.svg)
+  
+
+
 # p-retry
 
 > Retry a promise-returning or async function
